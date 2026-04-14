@@ -1,0 +1,12 @@
+CV - Votre Nom
+Développeur Web
+
+Contact:
+Email: votre.email@example.com
+Téléphone: +33 X XX XX XX XX
+
+Compétences:
+- HTML/CSS
+- JavaScript
+- React
+- Node.js

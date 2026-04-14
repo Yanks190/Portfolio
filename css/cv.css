@@ -1,0 +1,231 @@
+/* CV Specific Styles */
+.cv-section {
+    padding: 4rem 0;
+    background-color: var(--bg-light);
+}
+
+.cv-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--bg-white);
+    padding: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-lg);
+}
+
+.cv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.cv-profile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cv-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.cv-name h2 {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.cv-name p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+.cv-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cv-contact p {
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cv-contact i {
+    color: var(--primary-color);
+    width: 20px;
+}
+
+.cv-content {
+    display: grid;
+    gap: 2rem;
+}
+
+.cv-section-item {
+    margin-bottom: 2rem;
+}
+
+.cv-section-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cv-section-item h3 i {
+    font-size: 1.25rem;
+}
+
+.cv-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.cv-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: 3px solid var(--bg-white);
+    box-shadow: 0 0 0 3px var(--border-color);
+}
+
+.timeline-date {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content h4 {
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.timeline-content p {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    color: var(--text-light);
+}
+
+.timeline-content ul li {
+    margin-bottom: 0.25rem;
+}
+
+.skills-cv {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.skill-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill-name {
+    min-width: 120px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.skill-bar {
+    flex: 1;
+    height: 8px;
+    background-color: var(--bg-light);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+}
+
+.languages-list {
+    list-style: none;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.languages-list li {
+    padding: 0.75rem;
+    background-color: var(--bg-light);
+    border-radius: 0.5rem;
+    color: var(--text-dark);
+}
+
+#download-cv {
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .cv-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .cv-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cv-profile {
+        flex-direction: column;
+    }
+
+    .cv-contact {
+        align-items: center;
+    }
+
+    .skill-row {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .skill-name {
+        min-width: auto;
+    }
+}
+

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <title>Mes Projets</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #222;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 100px auto 60px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      padding: 25px 30px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      color: #1f2937;
+    }
+
+    h1, h2 {
+      color: #6366f1;
+      margin-bottom: 0.5em;
+    }
+
+    main > h2 {
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      font-size: 1.35rem;
+    }
+
+    main > h2:first-of-type {
+      margin-top: 0.5rem;
+    }
+
+    section.intro p {
+      font-size: 1.05rem;
+      line-height: 1.5;
+      color: #4b5563;
+    }
+
+    .articles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 35px;
+    }
+
+    .article {
+      background-color: #ffffff;
+      width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-decoration: none;
+      color: #1f2937;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.3s ease, transform 0.2s ease;
+      border: 1px solid #e5e7eb;
+    }
+
+    .article:hover {
+      box-shadow: 0 10px 15px rgba(99, 102, 241, 0.3);
+      transform: translateY(-5px);
+    }
+
+    .article img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-bottom: 3px solid #6366f1;
+    }
+
+    .article-content {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .article-title {
+      font-size: 1.15rem;
+      margin: 0 0 8px 0;
+      color: #6366f1;
+      font-weight: 600;
+    }
+
+    .article-desc {
+      font-size: 0.9rem;
+      color: #6b7280;
+      flex-grow: 1;
+      line-height: 1.5;
+    }
+
+    .article-date {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #9ca3af;
+      text-align: right;
+    }
+
+    @media (max-width: 600px) {
+      .articles {
+        flex-direction: column;
+        align-items: center;
+      }
+      .article {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <h1>Mes projets</h1>
+
+    <section class="intro">
+      <p>Sur cette page, vous trouverez les principaux projets que j'ai réalisés au cours de mes deux années de BTS. Certains sont des projets personnels.</p>
+    </section>
+
+    <h2>2e année</h2>
+
+    <section class="articles">
+
+      <a href="projet-cveen.html" class="article" rel="noopener">
+        <img src="images/cveen.jpg" alt="Projet CVEEN" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjE2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjE2MCIgZmlsbD0iIzY2N2VlYSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+Q1ZFRU48L3RleHQ+PC9zdmc+'">
+        <div class="article-content">
+          <h3 class="article-title">Projet CVEEN</h3>
+          <p class="article-desc">Application développée en 2e année de BTS SIO : analyse des besoins, conception et développement selon le cahier des charges du projet CVEEN.</p>
+          <div class="article-date">Réalisé en 2025-2026</div>
+        </div>
+      </a>
+
+      <a href="projet-playlist.html" class="article" rel="noopener">
+        <img src="images/playlist.jpg" alt="Projet Playlist" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjE2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjE2MCIgZmlsbD0iIzY2N2VlYSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UGxheWxpc3Q8L3RleHQ+PC9zdmc+'">
+        <div class="article-content">
+          <h3 class="article-title">Playlist musicale</h3>
+          <p class="article-desc">Application pour créer et organiser des playlists : gestion des titres, listes et interface adaptée au web.</p>
+          <div class="article-date">Réalisé en 2025-2026</div>
+        </div>
+      </a>
+
+    </section>
+
+    <h2>1re année</h2>
+
+    <section class="articles">
+
+      <a href="projet-quiestce.html" class="article" rel="noopener">
+        <img src="images/quiestce.jpg" alt="Jeu Qui est-ce ?" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjE2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjE2MCIgZmlsbD0iIzY2N2VlYSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UXVpIGVzdC1jZSA/PC90ZXh0Pjwvc3ZnPg=='">
+        <div class="article-content">
+          <h3 class="article-title">Jeu "Qui est-ce ?"</h3>
+          <p class="article-desc">Un jeu où il faut deviner un personnage à partir de sa description, avec une touche originale : le joueur peut mentir une fois dans sa description, mais le jeu réussit quand même à trouver le personnage.</p>
+          <div class="article-date">Réalisé en mars 2025</div>
+        </div>
+      </a>
+
+      <a href="projet-pascaline.html" class="article" rel="noopener">
+        <img src="images/pascaline.jpg" alt="Site vitrine La Pascaline" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgwIiBoZWlnaHQ9IjE2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjgwIiBoZWlnaHQ9IjE2MCIgZmlsbD0iIzY2N2VlYSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+UGFzY2FsaW5lPC90ZXh0Pjwvc3ZnPg=='">
+        <div class="article-content">
+          <h3 class="article-title">Site vitrine - La Pascaline</h3>
+          <p class="article-desc">Ce projet est un site vitrine réalisé à la demande de mon professeur. Après une sortie au musée du CNAM il nous a été demandé de réaliser ce site pour présenter un objet qui était présent au musée.</p>
+          <div class="article-date">Réalisé en mai 2025</div>
+        </div>
+      </a>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Yacoub Kamara. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

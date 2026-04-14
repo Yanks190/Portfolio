@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio professionnel - Développeur Web">
+    <title>Portfolio - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Bienvenue sur mon Portfolio</h1>
+            <p class="hero-subtitle">Développeur Web passionné par la création d'expériences numériques</p>
+            <div class="hero-buttons">
+                <a href="projets.html" class="btn btn-primary" style="display: inline-block; padding: 1rem 2rem; background-color: #6366f1; color: white; text-decoration: none; border-radius: 0.5rem; font-weight: 600; margin-right: 1rem;">Voir mes projets</a>
+                <a href="images/CV.pdf" download="CV.pdf" class="btn btn-secondary" style="display: inline-block; padding: 1rem 2rem; background-color: transparent; color: white; text-decoration: none; border: 2px solid white; border-radius: 0.5rem; font-weight: 600;">Télécharger mon CV</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-illustration">
+                <i class="fas fa-code"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">À propos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Passionné par le développement web et les technologies modernes, 
+                        je crée des solutions innovantes et performantes. Mon objectif est 
+                        de transformer des idées en réalité numérique.
+                    </p>
+                    <a href="quiestce.html" class="btn btn-outline">En savoir plus</a>
+                </div>
+                <div class="about-skills">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Preview -->
+    <section class="projects-preview" id="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <a href="projets.html" class="project-card-link">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Mes Projets</h3>
+                        <p>Découvrez tous mes projets réalisés pendant mon BTS SIO</p>
+                        <div class="project-link-btn" style="margin-top: auto; padding: 0.75rem 1rem; background-color: #6366f1; color: white; border-radius: 0.5rem; font-weight: 600; display: flex; align-items: center; justify-content: space-between;">
+                            <span>Voir mes projets</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="text-center" style="margin-top: 3rem; padding: 2rem 0;">
+                <a href="projets.html" class="btn btn-primary" style="display: inline-block; font-size: 1.2rem; padding: 1.2rem 3rem; background-color: #6366f1; color: white; text-decoration: none; border-radius: 0.5rem; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <i class="fas fa-folder-open" style="margin-right: 0.5rem;"></i>
+                    Voir tous les projets
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="contact-intro">Une question sur mon parcours ou mes projets ? Écrivez-moi ou retrouvez-moi sur les réseaux ci-dessous.</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:yacoubkamara.pro@gmail.com">yacoubkamara.pro@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+33749316192">+33 7 49 31 61 92</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/yacoub-kamara/" target="_blank" rel="noopener noreferrer">LinkedIn — Kamara Yacoub</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/Yanks190" target="_blank" rel="noopener noreferrer">GitHub — Yanks190</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Yacoub Kamara. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

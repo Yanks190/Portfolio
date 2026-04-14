@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projet Qui est-ce ? - Yacoub Kamara</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #eee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    main {
+      flex-grow: 1;
+      padding: 40px 60px;
+      background-color: rgba(255, 255, 255, 0.95);
+      max-width: 1200px;
+      margin: 100px auto 60px;
+      border-radius: 12px;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+      color: #1f2937;
+    }
+
+    h2 {
+      color: #6366f1;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 2.8rem;
+      letter-spacing: 1.5px;
+    }
+    h3 {
+      color: #6366f1;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-size: 1.9rem;
+    }
+
+    p {
+      line-height: 1.65;
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      color: #4b5563;
+    }
+
+    strong {
+      color: #6366f1;
+      font-weight: 700;
+    }
+
+    a {
+      color: #6366f1;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+      color: #4f46e5;
+    }
+
+    .btn-play {
+      display: inline-block;
+      background-color: #6366f1;
+      color: white;
+      padding: 14px 36px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 1.3rem;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      user-select: none;
+      text-decoration: none;
+      margin-top: 40px;
+    }
+    .btn-play:hover, .btn-play:focus {
+      background-color: #4f46e5;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      main {
+        padding: 30px 25px;
+        margin: 20px;
+      }
+      h2 {
+        font-size: 2.4rem;
+      }
+      h3 {
+        font-size: 1.6rem;
+      }
+      .btn-play {
+        padding: 12px 28px;
+        font-size: 1.1rem;
+      }
+    }
+    @media (max-width: 480px) {
+      main {
+        padding: 20px 15px;
+        margin: 15px;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1.3rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="navbar-placeholder"></div>
+
+  <main role="main" aria-labelledby="main-title">
+
+    <h2 id="main-title">Projet : <span>Qui est-ce ?</span> <small>(avec 1 mensonge autorisé)</small></h2>
+
+    <p>
+      Ce projet a été réalisé dans le cadre d'un devoir demandé par mon <strong>professeur</strong> en BTS SIO.
+      L'objectif principal était de développer un jeu de devinettes interactif en JavaScript, avec un système de score capable de
+      gérer la complexité introduite par la possibilité pour le joueur de mentir une fois pendant la partie.
+    </p>
+
+    <p>
+      J'ai conçu et dessiné personnellement tous les personnages du jeu, ce qui permet d'avoir une esthétique originale et cohérente,
+      et montre mes compétences en dessin numérique ainsi qu'en intégration graphique.
+      Le code source est entièrement <strong>open source</strong> et disponible sur mon
+      <a href="https://github.com/Yanks190/quiestcedescartes" target="_blank" rel="noopener noreferrer">compte GitHub</a> pour une transparence totale et
+      permettre à d'autres développeurs d'étudier ou de contribuer au projet.
+    </p>
+
+    <h3>Fonctionnement détaillé du jeu</h3>
+
+    <p>
+      Le joueur doit deviner le personnage secret en répondant à une série de questions par "oui" ou "non".
+      Chaque question porte sur une caractéristique précise (par exemple : "Le personnage porte-t-il des lunettes ?", "A-t-il les cheveux blonds ?", etc.).
+      Le joueur peut mentir une seule fois au cours du jeu, ce qui ajoute un niveau de complexité et de challenge.
+    </p>
+
+    <p>
+      Pour gérer ce mensonge unique, le système utilise un algorithme de score qui calcule la correspondance entre les réponses fournies
+      et les caractéristiques de chaque personnage.
+      Même si une réponse est fausse, le jeu pondère les résultats pour identifier le personnage qui correspond le mieux à l'ensemble des réponses.
+      Ainsi, à la fin de la partie, le personnage avec le score le plus élevé est proposé comme réponse.
+    </p>
+
+    <p>
+      Cette approche permet de conserver une expérience de jeu fluide et intéressante, en évitant qu'un simple mensonge ne fasse perdre la partie au système.
+      Techniquement, cela implique de parcourir la liste des personnages et de mettre à jour dynamiquement leur score en fonction des réponses,
+      ce qui demande une gestion attentive des données et des conditions dans le code JavaScript.
+    </p>
+
+    <p>
+      Le code a été structuré pour être clair et modulaire, facilitant la maintenance et les futures améliorations,
+      comme l'ajout de nouveaux personnages ou de fonctionnalités supplémentaires.
+    </p>
+
+    <div style="text-align:center;">
+      <a href="https://yanks190.github.io/quiestcedescartes/" target="_blank" rel="noopener noreferrer" class="btn-play" role="button" aria-label="Jouer au jeu Qui est-ce ?">
+        Jouer à "Qui est-ce ?"
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Yacoub Kamara - Tous droits réservés</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/yacoub-kamara/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Kamara Yacoub"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Yanks190" target="_blank" rel="noopener noreferrer" aria-label="GitHub Yanks190"><i class="fab fa-github"></i></a>
+      <a href="mailto:yacoubkamara.pro@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

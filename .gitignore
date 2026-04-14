@@ -1,0 +1,24 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Éditeurs
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+*.log
+
+# Temporaires
+*.tmp
+.cache/
+

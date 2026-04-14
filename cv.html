@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV - Portfolio">
+    <title>CV - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Mon CV</h1>
+            <p>Téléchargez ou consultez mon curriculum vitae</p>
+            <a href="images/CV.pdf" download="CV.pdf" class="btn btn-primary" id="download-cv">
+                <i class="fas fa-download"></i> Télécharger le CV
+            </a>
+        </div>
+    </section>
+
+    <!-- CV Content -->
+    <section class="cv-section">
+        <div class="container">
+            <div class="cv-container">
+                <div class="cv-header">
+                    <div class="cv-profile">
+                        <div class="cv-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="cv-name">
+                            <h2>Prénom Nom</h2>
+                            <p>Développeur Web</p>
+                        </div>
+                    </div>
+                    <div class="cv-contact">
+                        <p><i class="fas fa-envelope"></i> email@example.com</p>
+                        <p><i class="fas fa-phone"></i> +33 X XX XX XX XX</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Ville, Pays</p>
+                        <p><i class="fab fa-linkedin"></i> linkedin.com/in/profil</p>
+                        <p><i class="fab fa-github"></i> github.com/username</p>
+                    </div>
+                </div>
+
+                <div class="cv-content">
+                    <div class="cv-section-item">
+                        <h3><i class="fas fa-user-graduate"></i> Formation</h3>
+                        <div class="cv-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022 - 2025</div>
+                                <div class="timeline-content">
+                                    <h4>Diplôme en Informatique</h4>
+                                    <p>École/Université - Ville</p>
+                                    <p>Spécialisation en développement web et applications</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2020 - 2022</div>
+                                <div class="timeline-content">
+                                    <h4>Baccalauréat</h4>
+                                    <p>Lycée - Ville</p>
+                                    <p>Spécialité Mathématiques et Informatique</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-section-item">
+                        <h3><i class="fas fa-briefcase"></i> Expérience Professionnelle</h3>
+                        <div class="cv-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024</div>
+                                <div class="timeline-content">
+                                    <h4>Stage Développeur Web</h4>
+                                    <p>Entreprise - Ville</p>
+                                    <ul>
+                                        <li>Développement d'applications web avec React</li>
+                                        <li>Collaboration avec l'équipe sur des projets clients</li>
+                                        <li>Optimisation des performances et tests</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023</div>
+                                <div class="timeline-content">
+                                    <h4>Projet Personnel</h4>
+                                    <p>Freelance</p>
+                                    <ul>
+                                        <li>Création de sites web pour clients</li>
+                                        <li>Développement front-end et back-end</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-section-item">
+                        <h3><i class="fas fa-code"></i> Compétences Techniques</h3>
+                        <div class="skills-cv">
+                            <div class="skill-row">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-row">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-section-item">
+                        <h3><i class="fas fa-language"></i> Langues</h3>
+                        <ul class="languages-list">
+                            <li>Français - Natif</li>
+                            <li>Anglais - Courant</li>
+                            <li>Espagnol - Intermédiaire</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
