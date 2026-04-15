@@ -1,155 +1,126 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV - Portfolio">
-    <title>CV - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cv.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV - KAMARA Yacoub</title>
+  <link rel="stylesheet" href="css/cv.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1CmS7D3TUA8iEOvV+lB9d9q3Z6A8EVwMO8+0jXqfJ0HdXoFk7cH/HeIn8sXK4j1nocjA3T4f6gM1kEO5zYGqQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Navigation -->
-    <div id="navbar-placeholder"></div>
+  <div id="navbar-placeholder"></div>
+  <main class="cv-main" role="main">
+    <header class="cv-hero">
+      <div class="cv-intro">
+        <h1>KAMARA Yacoub</h1>
+        <p class="cv-subtitle">Étudiant en Informatique</p>
+        <p><a href="mailto:yacoub.kamarapro@gmail.com">yacoub.kamarapro@gmail.com</a></p>
+        <p>+33 7 49 31 61 92</p>
+        <p>77190, France</p>
+        <p><a href="https://www.linkedin.com/in/yacoub-kamara/" target="_blank">linkedin.com/in/yacoub-kamara</a></p>
+        <p><a href="https://github.com/Yanks190" target="_blank">github.com/Yanks190</a></p>
+      </div>
+    </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1>Mon CV</h1>
-            <p>Téléchargez ou consultez mon curriculum vitae</p>
-            <a href="images/CV.pdf" download="CV.pdf" class="btn btn-primary" id="download-cv">
-                <i class="fas fa-download"></i> Télécharger le CV
-            </a>
-        </div>
-    </section>
-
-    <!-- CV Content -->
     <section class="cv-section">
-        <div class="container">
-            <div class="cv-container">
-                <div class="cv-header">
-                    <div class="cv-profile">
-                        <div class="cv-avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="cv-name">
-                            <h2>Prénom Nom</h2>
-                            <p>Développeur Web</p>
-                        </div>
-                    </div>
-                    <div class="cv-contact">
-                        <p><i class="fas fa-envelope"></i> email@example.com</p>
-                        <p><i class="fas fa-phone"></i> +33 X XX XX XX XX</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Ville, Pays</p>
-                        <p><i class="fab fa-linkedin"></i> linkedin.com/in/profil</p>
-                        <p><i class="fab fa-github"></i> github.com/username</p>
-                    </div>
-                </div>
-
-                <div class="cv-content">
-                    <div class="cv-section-item">
-                        <h3><i class="fas fa-user-graduate"></i> Formation</h3>
-                        <div class="cv-timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-date">2022 - 2025</div>
-                                <div class="timeline-content">
-                                    <h4>Diplôme en Informatique</h4>
-                                    <p>École/Université - Ville</p>
-                                    <p>Spécialisation en développement web et applications</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">2020 - 2022</div>
-                                <div class="timeline-content">
-                                    <h4>Baccalauréat</h4>
-                                    <p>Lycée - Ville</p>
-                                    <p>Spécialité Mathématiques et Informatique</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cv-section-item">
-                        <h3><i class="fas fa-briefcase"></i> Expérience Professionnelle</h3>
-                        <div class="cv-timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-date">2024</div>
-                                <div class="timeline-content">
-                                    <h4>Stage Développeur Web</h4>
-                                    <p>Entreprise - Ville</p>
-                                    <ul>
-                                        <li>Développement d'applications web avec React</li>
-                                        <li>Collaboration avec l'équipe sur des projets clients</li>
-                                        <li>Optimisation des performances et tests</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">2023</div>
-                                <div class="timeline-content">
-                                    <h4>Projet Personnel</h4>
-                                    <p>Freelance</p>
-                                    <ul>
-                                        <li>Création de sites web pour clients</li>
-                                        <li>Développement front-end et back-end</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cv-section-item">
-                        <h3><i class="fas fa-code"></i> Compétences Techniques</h3>
-                        <div class="skills-cv">
-                            <div class="skill-row">
-                                <span class="skill-name">HTML/CSS</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 90%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-row">
-                                <span class="skill-name">JavaScript</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 85%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-row">
-                                <span class="skill-name">React</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 80%"></div>
-                                </div>
-                            </div>
-                            <div class="skill-row">
-                                <span class="skill-name">Node.js</span>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 75%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cv-section-item">
-                        <h3><i class="fas fa-language"></i> Langues</h3>
-                        <ul class="languages-list">
-                            <li>Français - Natif</li>
-                            <li>Anglais - Courant</li>
-                            <li>Espagnol - Intermédiaire</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <h2>Formation</h2>
+      <div class="cv-timeline">
+        <div class="cv-item">
+          <span class="cv-date">2024 - 2026</span>
+          <div>
+            <h3>BTS SIO - Cybersécurité</h3>
+            <p>Lycée René Descartes - Champs-sur-Marne</p>
+            <p>Spécialisation en cybersécurité et développement</p>
+          </div>
         </div>
+        <div class="cv-item">
+          <span class="cv-date">2022 - 2024</span>
+          <div>
+            <h3>BAC PRO SN</h3>
+            <p>Lycée Lafayette - Fontainebleau / Héricy</p>
+            <p>Spécialité Systèmes Numériques</p>
+          </div>
+        </div>
+        <div class="cv-item">
+          <span class="cv-date">2021 - 2022</span>
+          <div>
+            <h3>BAC PRO MELEC</h3>
+            <p>Lycée Joliot Curie - Dammarie-les-Lys</p>
+            <p>Spécialité Électronique</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Portfolio. Tous droits réservés.</p>
+    <section class="cv-section">
+      <h2>Expérience Professionnelle</h2>
+      <div class="cv-timeline">
+        <div class="cv-item">
+          <span class="cv-date">15/11/2023 - 13/01/2024</span>
+          <div>
+            <h3>Stage Technicien Bureautique et Réseau</h3>
+            <p>Green Cube Technologie ANB Numérique - Ville</p>
+            <ul>
+              <li>Installation de box</li>
+              <li>Installation de caméras et système anti-intrusion</li>
+              <li>Réponse aux besoins clientèle</li>
+            </ul>
+          </div>
         </div>
-    </footer>
+        <div class="cv-item">
+          <span class="cv-date">02/06/2025</span>
+          <div>
+            <h3>Stage Développeur et Technicien en Usine</h3>
+            <p>ICT France Foxy - Ville</p>
+            <ul>
+              <li>Gestion des inventaires</li>
+              <li>Gestion des utilisateurs sur un ERP</li>
+              <li>Création d’application d’inventaire</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-item">
+          <span class="cv-date">15/07/2025</span>
+          <div>
+            <h3>Opérateur Logistique en Intérim</h3>
+            <p>Crosslog International - Ville</p>
+            <ul>
+              <li>Triage de meubles</li>
+              <li>Colisage</li>
+              <li>Préparation de commandes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="js/navbar.js"></script>
-    <script src="js/main.js"></script>
+    <section class="cv-section">
+      <h2>Compétences Techniques</h2>
+      <ul>
+        <li>Programmation orientée objet en Java</li>
+        <li>Scripting : Shell (Bash), Python, PowerShell</li>
+        <li>Création d'interfaces dynamiques et automatisation de traitements</li>
+        <li>EDI : Eclipse, NetBeans, Visual Studio Code</li>
+        <li>Cybersécurité : bonnes pratiques, validation des entrées, gestion des erreurs</li>
+        <li>Outils sécurité : OWASP ZAP, Burp Suite</li>
+        <li>Outils Dev : Git, GitHub, Postman, XAMPP, WAMP</li>
+        <li>Outils collaboratifs : WordPress, Notion, Canva, Figma</li>
+        <li>CMS et communication digitale (portfolio, veille technologique)</li>
+      </ul>
+    </section>
+
+    <section class="cv-section">
+      <h2>Langues</h2>
+      <ul>
+        <li>Français - Natif</li>
+        <li>Anglais - C2</li>
+        <li>Allemand - A2</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
